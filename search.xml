@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>/2020/11/20/git%E7%9A%84%E4%BD%BF%E7%94%A8-%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%BC%A0%E5%88%B0github%E4%BB%93%E5%BA%93/</url>
+    <content><![CDATA[<hr>
+<p>title: git的使用-将本地项目传到github仓库<br>tags: git<br>categories: git</p>
+<hr>
+<h5 id="环境：window"><a href="#环境：window" class="headerlink" title="环境：window"></a>环境：window</h5><h6 id="1-进入项目的目录中，执行-git-init-把文件夹变为git可以管理的仓库"><a href="#1-进入项目的目录中，执行-git-init-把文件夹变为git可以管理的仓库" class="headerlink" title="1.进入项目的目录中，执行 git init(把文件夹变为git可以管理的仓库)"></a>1.进入项目的目录中，执行 git init(把文件夹变为git可以管理的仓库)</h6><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pc@LAPTOP-TJR9FCRR MINGW64 ~/Desktop/rsyslog-transmit-1.0</span><br><span class="line">$ git init</span><br><span class="line">Initialized empty Git repository <span class="keyword">in</span> C:/Users/pc/Desktop/rsyslog-transmit-1.0/.git/</span><br></pre></td></tr></table></figure>
+<h6 id="2-git-add-将目录下的所有的文件添加到仓库中"><a href="#2-git-add-将目录下的所有的文件添加到仓库中" class="headerlink" title="2.git add . (将目录下的所有的文件添加到仓库中)"></a>2.git add . (将目录下的所有的文件添加到仓库中)</h6><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pc@LAPTOP-TJR9FCRR MINGW64 ~/Desktop/rsyslog-transmit-1.0 (master)</span><br><span class="line">$ git add .</span><br><span class="line">warning: LF will be replaced by CRLF <span class="keyword">in</span> desktop/RsyslogTransmit-client.desktop.</span><br><span class="line">The file will have its original line endings <span class="keyword">in</span> your working directory</span><br></pre></td></tr></table></figure>
+<h6 id="3-git-commit-（把项目提交到仓库）"><a href="#3-git-commit-（把项目提交到仓库）" class="headerlink" title="3.git commit （把项目提交到仓库）"></a>3.git commit （把项目提交到仓库）</h6><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pc@LAPTOP-TJR9FCRR MINGW64 ~/Desktop/rsyslog-transmit-1.0 (master)</span><br><span class="line">$ git commit -m <span class="string">&quot;rsyslog-transmit codes first commit 2020.11.11&quot;</span></span><br><span class="line">[master (root-commit) 6226c49] rsyslog-transmit codes first commit 2020.11.11</span><br></pre></td></tr></table></figure>
+
+<h6 id="4-将本地仓库与github上的仓库进行关联"><a href="#4-将本地仓库与github上的仓库进行关联" class="headerlink" title="4.将本地仓库与github上的仓库进行关联"></a>4.将本地仓库与github上的仓库进行关联</h6><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pc@LAPTOP-TJR9FCRR MINGW64 ~/Desktop/rsyslog-transmit-1.0 (master)</span><br><span class="line">$ git remote add origin https://github.com/wangzhitao1997/rsyslog-transmit.git</span><br></pre></td></tr></table></figure>
+<h6 id="5-将本地的所有的内容推送到github仓库中，需要输入账号密码"><a href="#5-将本地的所有的内容推送到github仓库中，需要输入账号密码" class="headerlink" title="5.将本地的所有的内容推送到github仓库中，需要输入账号密码"></a>5.将本地的所有的内容推送到github仓库中，需要输入账号密码</h6><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pc@LAPTOP-TJR9FCRR MINGW64 ~/Desktop/rsyslog-transmit-1.0 (master)</span><br><span class="line">$ git push -u origin master (如果远程仓库是空的，需要加-u,下次再上传时不需要加-u)</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://blog.csdn.net/zamamiro/article/details/70172900?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare">参考文档</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/11/18/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -17,26 +33,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>git的使用-将本地项目传到github仓库</title>
-    <url>/2020/11/20/git%E7%9A%84%E4%BD%BF%E7%94%A8-%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E5%88%B0github%E4%BB%93%E5%BA%93/</url>
-    <content><![CDATA[<h5 id="环境：window"><a href="#环境：window" class="headerlink" title="环境：window"></a>环境：window</h5><h6 id="1-进入项目的目录中，执行-git-init-把文件夹变为git可以管理的仓库"><a href="#1-进入项目的目录中，执行-git-init-把文件夹变为git可以管理的仓库" class="headerlink" title="1.进入项目的目录中，执行 git init(把文件夹变为git可以管理的仓库)"></a>1.进入项目的目录中，执行 git init(把文件夹变为git可以管理的仓库)</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pc@LAPTOP-TJR9FCRR MINGW64 ~&#x2F;Desktop&#x2F;rsyslog-transmit-1.0</span><br><span class="line">$ git init</span><br><span class="line">Initialized empty Git repository in C:&#x2F;Users&#x2F;pc&#x2F;Desktop&#x2F;rsyslog-transmit-1.0&#x2F;.git&#x2F;</span><br><span class="line">&#96;&#96;&#96;  </span><br><span class="line">###### 2.git add . (将目录下的所有的文件添加到仓库中)</span><br></pre></td></tr></table></figure>
-<p>pc@LAPTOP-TJR9FCRR MINGW64 ~/Desktop/rsyslog-transmit-1.0 (master)<br>$ git add .<br>warning: LF will be replaced by CRLF in desktop/RsyslogTransmit-client.desktop.<br>The file will have its original line endings in your working directory</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">###### 3.git commit （把项目提交到仓库）</span><br></pre></td></tr></table></figure>
-<p>pc@LAPTOP-TJR9FCRR MINGW64 ~/Desktop/rsyslog-transmit-1.0 (master)<br>$ git commit -m “rsyslog-transmit codes first commit 2020.11.11”<br>[master (root-commit) 6226c49] rsyslog-transmit codes first commit 2020.11.11</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">###### 4.将本地仓库与github上的仓库进行关联</span><br></pre></td></tr></table></figure>
-<p>pc@LAPTOP-TJR9FCRR MINGW64 ~/Desktop/rsyslog-transmit-1.0 (master)<br>$ git remote add origin <a href="https://github.com/wangzhitao1997/rsyslog-transmit.git">https://github.com/wangzhitao1997/rsyslog-transmit.git</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">###### 5.将本地的所有的内容推送到github仓库中，需要输入账号密码</span><br></pre></td></tr></table></figure>
-<p>pc@LAPTOP-TJR9FCRR MINGW64 ~/Desktop/rsyslog-transmit-1.0 (master)<br>$ git push -u origin master (如果远程仓库是空的，需要加-u,下次再上传时不需要加-u)</p>
-<p>```<br><a href="ttps://blog.csdn.net/zamamiro/article/details/70172900?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare">参考文档</a></p>
-]]></content>
-      <categories>
-        <category>github</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-      </tags>
   </entry>
   <entry>
     <title>R系linux系统上hexo博客的搭建</title>
